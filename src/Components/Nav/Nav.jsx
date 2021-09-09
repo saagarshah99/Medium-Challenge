@@ -6,10 +6,10 @@ const Nav = (props) => {
 
     // mapping through array containing list items
     return (
-        <header className="header flexbox">
-            <h2 className="header__logo flexbox">{logoText}</h2>
+        <header className="header flex">
+            <h2 className="header__logo flex">{logoText}</h2>
 
-            <ul className="header__nav flexbox">
+            <ul className="header__nav flex">
                 {items.map(item => <li> {item} </li>)}
             </ul>
         </header>

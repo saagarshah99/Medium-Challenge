@@ -1,21 +1,22 @@
 import React from 'react';
 import "./ArticleSummary.scss";
-import cage from "../../assets/images/cage.jpg";
 
 const ArticleSummary = ({ articles }) => {
-    const articleClass = "article-summary";
-    
-    return articles.map(({ title, description, author }) => {
+    return articles.map(({ title, description, author, link, thumbnail }) => {
+        const imagesURL = process.env.PUBLIC_URL + thumbnail;
+
         return (
             <>
-                <div className={articleClass+" flexbox"}>
-                    <section className="flexbox">
-                        <h4 className={articleClass+"__title"}>{title}</h4>
-                        <p className={articleClass+"__description"}>{description}</p>
-                        <small className={articleClass+"__author"}>{author}</small>
+                <div className={"article-summary flex"}>
+                    <section className="flex">
+                        <h4 className={"article-summary__title"}>
+                            <a href={link} target="_blank" rel="noreferrer">{title}</a>
+                        </h4>
+                        <p className={"article-summary__description"}>{description}</p>
+                        <small className={"article-summary__author"}>{author}</small>
                     </section>
-                    <section className="flexbox">
-                        <img className={articleClass+"__thumbnail"} src={cage} alt="Thumbnail" />
+                    <section className="flex">
+                        <img className={"article-summary__thumbnail"} src={imagesURL} alt="Thumbnail" />
                     </section>
                 </div>
             </>
