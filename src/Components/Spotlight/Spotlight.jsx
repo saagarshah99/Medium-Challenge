@@ -14,6 +14,6 @@ const Spotlight = ({ props }) => {
             </div>
         );
     });
-}
+};
 
 export default Spotlight

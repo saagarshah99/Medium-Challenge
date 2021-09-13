@@ -14,7 +14,7 @@ function App() {
       heading: "Is It Time to Get Excited About Windows 11?",
       description: "Big changes are coming and that might be a good thing",
       author: "Lance Ulanoff",
-      image: "cage_spotlight.jpg",
+      image: "cage4.jpg",
     },
   ];
   
@@ -28,6 +28,6 @@ function App() {
       </main>
     </div>
   );
-}
+};
 
 export default App;

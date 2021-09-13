@@ -14,6 +14,11 @@
         justify-content: center;
         text-align: center;
         padding: 10px;
+
+        &:hover {
+            color: blue;
+            cursor: pointer;
+        }
     }
 
     &__nav {
