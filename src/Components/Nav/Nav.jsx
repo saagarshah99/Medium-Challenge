@@ -1,10 +1,8 @@
 import React from 'react';
 import "./Nav.scss";
 
-const Nav = (props) => {
-    const {items, logoText} = props;
-
-    // mapping through array containing list items
+// mapping through array containing list items
+const Nav = ({items, logoText}) => {
     return (
         <header className="header flex">
             <h2 className="header__logo flex">{logoText}</h2>

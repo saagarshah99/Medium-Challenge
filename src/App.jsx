@@ -7,8 +7,6 @@ import ArticleSummary from "./Components/ArticleSummary/ArticleSummary";
 import articles from "./data/articles";
 
 function App() {
-  document.title = "Medium";
-  
   const spotlightProps = [
     {
       heading: "Is It Time to Get Excited About Windows 11?",
